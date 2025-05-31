@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>สินค้าที่เรามี</title>
+    <link rel="stylesheet" href="product.css" />
+</head>
+<body>
+
+    <!-- เมนูนำทาง -->
+    <header class="header">
+        <div class="logo">
+            <a href="home.html">
+                <img src="img/ขาวดำ_logo-removebg-preview.png" alt="Logo" />
+            </a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">หน้าหลัก</a></li>
+                <li><a href="blog.html">บทความ</a></li>
+                <li><a href="product.html">สินค้าที่เรามี</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+
+        <!-- ปุ่มเบอร์เกอร์ -->
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="slides">
+
+            <div class="slide active">
+                <div class="slide-content">
+                    <img src="products/ทุเรียน.png" alt="ทุเรียนหมอนทอง" />
+                    <div class="text-content">
+                        <h2>ทุเรียนหมอนทอง หวานหอม</h2>
+                        <p>เนื้อหนานุ่ม หวานหอม รสชาติละมุน ปลูกด้วยวิธีธรรมชาติ</p>
+                        <button class="buy-button">สั่งซื้อสินค้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="products/แซนวิช-removebg-preview.png" alt="แซนวิช" />
+                    <div class="text-content">
+                        <h2>แซนวิช</h2>
+                        <p>ทุเรียนก้านยาว รสชาติหวานกรอบ เนื้อแน่นเต็มคำ</p>
+                        <button class="buy-button">สั่งซื้อสินค้า</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="products/มาม่าเกาหลี_-_Google-removebg-preview.png" alt="มาม่าเกาหลี" />
+                    <div class="text-content">
+                        <h2>มาม่าเกาหลี</h2>
+                        <p>ทุเรียนชะนี รสชาติกลมกล่อม เนื้อหอมหวานกำลังดี</p>
+                        <button class="buy-button">สั่งซื้อสินค้า</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ลูกศรเลื่อน -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+
+        <!-- จุดแสดงสถานะ -->
+        <div class="dots"></div>
+    </section>
+
+    <section class="timeline">
+        <div class="timeline-item">
+          <img src="img/น้ำตก.jpg" alt="ปลูกต้นทุเรียน">
+          <div class="text-content">
+            <h2>เริ่มปลูกต้นกล้า</h2>
+            <p>เลือกสายพันธุ์ทุเรียนหมอนทองที่ดีที่สุด ปลูกในดินที่อุดมสมบูรณ์</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <img src="img/รถไฟ.jpg" alt="การดูแล">
+          <div class="text-content">
+            <h2>ใส่ใจดูแล</h2>
+            <p>รดน้ำ พรวนดิน และใช้ปุ๋ยอินทรีย์อย่างสม่ำเสมอ เพื่อผลผลิตที่ดี</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <img src="img/แหลมฉบัง.jpg" alt="การออกดอก">
+          <div class="text-content">
+            <h2>การออกดอกบานสะพรั่ง</h2>
+            <p>ช่วงเวลาแห่งความหวัง ดอกทุเรียนบานสะพรั่งส่งกลิ่นหอมทั่วสวน</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <img src="img/19371_0.jpg" alt="การเก็บเกี่ยว">
+          <div class="text-content">
+            <h2>เก็บเกี่ยวผลผลิต</h2>
+            <p>เมื่อผลสุกได้ที่ เราเก็บเกี่ยวด้วยความพิถีพิถัน เพื่อรักษาคุณภาพ</p>
+          </div>
+        </div>
+    
+        <div class="timeline-item">
+          <img src="img/5.jpg" alt="การจำหน่าย">
+          <div class="text-content">
+            <h2>พร้อมส่งถึงมือคุณ</h2>
+            <p>ทุเรียนหมอนทองพร้อมเสิร์ฟ ส่งตรงถึงบ้านคุณ สดใหม่ทุกวัน</p>
+          </div>
+        </div>
+
+      </section>
+      
+    <script src="product.js"></script>
+</body>
+</html>

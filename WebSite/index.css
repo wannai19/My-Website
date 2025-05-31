@@ -1,0 +1,395 @@
+/* เมนูนำทาง */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 40px; /* กำหนดความสูงของ header */
+}
+
+/* ปรับขนาดโลโก้ */
+.logo img { 
+    height: 70px; /* ปรับขนาดโลโก้ใหญ่ขึ้น */
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* เพิ่มเอฟเฟกต์ Hover */
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* จัด nav ให้อยู่ระดับเดียวกับโลโก้ */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* ปรับระยะห่างเมนู */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* เพิ่มระยะห่างระหว่างหมวดหมู่ */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e67e22;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+
+/* ส่วนต้อนรับ */
+.hero {
+    background: url('img/19012_0.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.hero-content .btn {
+    padding: 15px 30px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #d35400;
+}
+
+/* เกี่ยวกับฉัน */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10%;
+    background-color: #ffffff;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.p1 {
+        font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+.about-content .P1 {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.about-content .contact-btn {
+    padding: 12px 15px;
+    background-color: #000000;
+    color: white;   
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: #000000;
+}
+
+.about-content .contact-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: #000000;
+}
+
+/* คอร์สเรียน */
+.courses {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+.course-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    font-size: 1.1em;
+}
+
+/* บทความ */
+.blog h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #222;
+    font-weight: bolder;
+
+}
+
+/* กำหนด Grid Layout */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ปรับอัตโนมัติ */
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ปรับขนาดการ์ดให้สวยงาม */
+.blog-card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ปรับขนาดรูปภาพให้เป็นมาตรฐาน */
+.blog-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* ปรับขนาดตัวอักษร */
+.blog-card h3 {
+    padding: 15px;
+    font-size: 1.4em;
+    color: #333;
+    margin: 0;
+}
+
+.blog-card p {
+    padding: 0 15px 15px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* ปุ่มอ่านเพิ่มเติม */
+.blog-card .btn {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    padding: 12px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.blog-card .btn:hover {
+    background-color: #d35400;
+}
+
+/* ทำให้รองรับหน้าจอมือถือ */
+@media (max-width: 1024px) { /* สำหรับ Tablet */
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) { /* สำหรับมือถือ */
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.blog-page {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.blog-page .blog-btn {
+    padding: 15px 30px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 24px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-page .btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ติดต่อ */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.contact .btn {
+    padding: 15px 30px;
+    background-color: #e67e22;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* สไตล์สำหรับการติดต่อ Line OA */
+.line-contact {
+    margin-top: 40px;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.line-contact h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+.line-contact p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.line-contact .line-btn {
+    padding: 15px 30px;
+    background-color: #00b900;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.line-contact .line-btn:hover {
+    background-color: #008f00;
+}
+
+
+/* ส่วนท้าย */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
